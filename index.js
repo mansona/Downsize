@@ -1,2 +1,2 @@
-require = require("esm")(module)
-module.exports = require("./main.mjs").default;
+const downsizeModule = require('./dist/main');
+module.exports = downsizeModule.default;

@@ -1,3 +1,5 @@
+# Changelog
+
 v1.0.1 / 2022-05-16
 ==================
 * fix module definition for esm (.mjs instead of .js) #6 from @mansona

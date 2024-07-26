@@ -1,5 +1,20 @@
 # Changelog
 
+## Release (2024-07-26)
+
+downsize-cjs 1.1.0 (minor)
+
+#### :rocket: Enhancement
+* `downsize-cjs`
+  * [#8](https://github.com/mansona/Downsize/pull/8) improve esm-cjs co-deploy ([@mansona](https://github.com/mansona))
+
+#### :house: Internal
+* `downsize-cjs`
+  * [#9](https://github.com/mansona/Downsize/pull/9) setup release-plan ([@mansona](https://github.com/mansona))
+
+#### Committers: 1
+- Chris Manson ([@mansona](https://github.com/mansona))
+
 v1.0.1 / 2022-05-16
 ==================
 * fix module definition for esm (.mjs instead of .js) #6 from @mansona

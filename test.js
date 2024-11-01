@@ -38,6 +38,20 @@ describe("Word-wise truncation", function () {
             .should.equal("<p>this < is a > test < test</p>");
     });
 
+    it("should ignore trailing carets", function() {
+        downsize("<p>this < is a > test < test > <strong>test of word downsizing</strong> some < stuff >", {words: 5})
+            .should.equal("<p>this < is a > test < test</p>");
+
+        downsize("<p>this < is a > test < test > <strong>test of word downsizing</strong> some stuff <", {words: 5})
+            .should.equal("<p>this < is a > test < test</p>");
+
+        downsize("<p>this is < a test >", {words: 5})
+            .should.equal("<p>this is < a test ></p>");
+        
+        downsize("<p>this is < a > test <", {words: 5})
+            .should.equal("<p>this is < a > test <</p>");
+    });
+
     it("should ignore comments in markup, and carets in comments", function () {
         downsize("<p>this <!-- is a > test < test --> <strong>test of word downsizing</strong> some stuff</p>", {words: 2})
             .should.equal("<p>this <!-- is a > test < test --> <strong>test</strong></p>");
@@ -141,6 +155,8 @@ describe("Character based truncation", function () {
         downsize("<p>a</p><p>b</p><p>cdefghij</p><p>klmnop</p><p>qrs</p>", {characters: 15})
             .should.equal("<p>a</p><p>b</p><p>cdefghij</p><p>klmno</p>");
 
+        downsize("<p>ab</p><p>cd</p><p>efghi</p><p>jklmn</p><p>opqrs</p>", {characters: 15})
+            .should.equal("<p>ab</p><p>cd</p><p>efghi</p><p>jklmn</p><p>o</p>")
     });
 
     it("should await the end of the containing paragraph", function () {

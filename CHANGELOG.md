@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2024-11-01)
+
+downsize-cjs 1.1.1 (patch)
+
+#### :bug: Bug Fix
+* `downsize-cjs`
+  * [#7](https://github.com/mansona/Downsize/pull/7) avoid NPE on trailing < ([@bugQ](https://github.com/bugQ))
+
+#### Committers: 1
+- bug Q ([@bugQ](https://github.com/bugQ))
+
 ## Release (2024-07-26)
 
 downsize-cjs 1.1.0 (minor)

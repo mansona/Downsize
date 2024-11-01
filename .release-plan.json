@@ -1,21 +1,17 @@
 {
   "solution": {
     "downsize-cjs": {
-      "impact": "minor",
-      "oldVersion": "1.0.1",
-      "newVersion": "1.1.0",
+      "impact": "patch",
+      "oldVersion": "1.1.0",
+      "newVersion": "1.1.1",
       "constraints": [
         {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        },
-        {
           "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
+          "reason": "Appears in changelog section :bug: Bug Fix"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2024-07-26)\n\ndownsize-cjs 1.1.0 (minor)\n\n#### :rocket: Enhancement\n* `downsize-cjs`\n  * [#8](https://github.com/mansona/Downsize/pull/8) improve esm-cjs co-deploy ([@mansona](https://github.com/mansona))\n\n#### :house: Internal\n* `downsize-cjs`\n  * [#9](https://github.com/mansona/Downsize/pull/9) setup release-plan ([@mansona](https://github.com/mansona))\n\n#### Committers: 1\n- Chris Manson ([@mansona](https://github.com/mansona))\n"
+  "description": "## Release (2024-11-01)\n\ndownsize-cjs 1.1.1 (patch)\n\n#### :bug: Bug Fix\n* `downsize-cjs`\n  * [#7](https://github.com/mansona/Downsize/pull/7) avoid NPE on trailing < ([@bugQ](https://github.com/bugQ))\n\n#### Committers: 1\n- bug Q ([@bugQ](https://github.com/bugQ))\n"
 }

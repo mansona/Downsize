@@ -1,5 +1,20 @@
 # Changelog
 
+## Release (2025-02-18)
+
+downsize-cjs 1.1.2 (patch)
+
+#### :bug: Bug Fix
+* `downsize-cjs`
+  * [#12](https://github.com/mansona/Downsize/pull/12) make sure that dist folder makes it into the tar ([@mansona](https://github.com/mansona))
+
+#### :house: Internal
+* `downsize-cjs`
+  * [#14](https://github.com/mansona/Downsize/pull/14) update release plan ([@mansona](https://github.com/mansona))
+
+#### Committers: 1
+- Chris Manson ([@mansona](https://github.com/mansona))
+
 ## Release (2024-11-01)
 
 downsize-cjs 1.1.1 (patch)
